@@ -1,0 +1,16 @@
+<div class="container">
+    <a routerLink="./create"><button>CrearAutor</button></a>
+</div>
+
+<div class="container">
+    <div class="card-columns m-5 animated fadeIn">
+        <div *ngFor="let author of authors; index as i" class="card puntero">
+            <div class="card-body">
+                <h5 class="card-title">
+                    {{ author.name }}
+                </h5>
+                <button (click)="eliminarAutor(i)">Eliminar Autor</button>
+            </div>
+        </div>
+    </div>
+</div>

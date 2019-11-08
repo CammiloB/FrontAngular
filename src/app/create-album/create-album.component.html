@@ -1,0 +1,15 @@
+
+    <div class="form-group">
+      <label>Nombre Album</label>
+      <input type="text" class="form-control" [(ngModel)]="name"  placeholder="Nombre Album">
+    </div>
+    <div class="form-group">
+      <label>Url Imagen</label>
+      <input type="text" class="form-control" [(ngModel)]="image"  placeholder="URLImagen">
+    </div>
+    <div class="form-group">
+        <label>Fecha Creación</label>
+        <input type="text" class="form-control" [(ngModel)]="date"  placeholder="Fecha Creación">
+      </div>
+    <button type="button" class="btn btn-primary" (click)="crearAlbum()">Enviar</button>
+

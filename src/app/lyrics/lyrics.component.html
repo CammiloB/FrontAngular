@@ -1,0 +1,17 @@
+<div class="container">
+    <a routerLink="./create"><button>CrearAlbum</button></a>
+</div>
+
+<div class="container">
+    <div class="card-columns m-5 animated fadeIn">
+        <div *ngFor="let lyric of lyrics; index as i" class="card puntero">
+            <img class="card-img-top" [src]="lyric.image" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">
+                    {{ lyric.name }}
+                </h5>
+                <button (click)="eliminarAlbum(i)">Eliminar Cancion</button>
+            </div>
+        </div>
+    </div>
+</div>
